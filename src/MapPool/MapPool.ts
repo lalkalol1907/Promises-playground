@@ -1,5 +1,5 @@
-import { Mutex } from "../Mutex/Mutex";
-import { WaitGroup } from "../WaitGroup/WaitGroup";
+import { Mutex } from "../Mutex";
+import { WaitGroup } from "../WaitGroup";
 import { ResultType, ResultWithHandling } from "./Types";
 
 export class MapPool<K extends Array<unknown>, T extends (...args: K) => Promise<any>> {

@@ -1,5 +1,5 @@
-import { Mutex } from "../Mutex/Mutex";
-import { WaitGroup } from "../WaitGroup/WaitGroup";
+import { Mutex } from "../Mutex";
+import { WaitGroup } from "../WaitGroup";
 import { PromisePoolResult, PromisePoolResultWithHandling } from "./Types";
 
 export class PromisePool<
