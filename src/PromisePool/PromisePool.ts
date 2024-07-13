@@ -1,5 +1,5 @@
-import { Mutex } from "../Mutex";
-import { WaitGroup } from "../WaitGroup";
+import { Mutex } from "../Mutex/Mutex";
+import { WaitGroup } from "../WaitGroup/WaitGroup";
 import { PromisePoolResult, PromisePoolResultWithHandling } from "./Types";
 
 export class PromisePool<
@@ -73,6 +73,6 @@ export class PromisePool<
     }
     await this._wg.waitAll();
 
-    return Object.values(result as {}) as unknown as R;
+    return result;
   }
 }
